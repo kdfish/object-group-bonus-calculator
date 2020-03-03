@@ -40,4 +40,36 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-console.log( employees );
+
+function calculateBonus(addBonus) {
+  if (reviewRating <= 2){
+  return "No Bonus";
+  }
+
+  if (reviewRating === 3){
+    return "Bonus is 4%";
+  }
+
+    if (reviewRating === 4){
+      return "Bonus is 6%";
+    }
+
+  if (reviewRating === 5){
+    return "Bonus is 10%";
+  }
+
+  if ( employeeNumber.lenght === 4);{
+    return 'Additional 5% Bonus';
+  }
+
+  if(annualSalary >= '65000'){
+    return ' Bonus is only 1%';
+  }
+
+  }
+  
+  
+
+
+
+
