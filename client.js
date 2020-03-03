@@ -1,32 +1,32 @@
 const employees = [
   {
     name: 'Atticus',
-    employeeNumber: '2405',
-    annualSalary: '47000',
+    employeeNumber: 2405,
+    annualSalary: 47000,
     reviewRating: 3
   },
   {
     name: 'Jem',
-    employeeNumber: '62347',
-    annualSalary: '63500',
+    employeeNumber: 62347,
+    annualSalary: 63500,
     reviewRating: 4
   },
   {
     name: 'Scout',
-    employeeNumber: '6243',
-    annualSalary: '74750',
+    employeeNumber: 6243,
+    annualSalary: 74750,
     reviewRating: 5
   },
   {
     name: 'Robert',
-    employeeNumber: '26835',
-    annualSalary: '66000',
+    employeeNumber: 2683,
+    annualSalary: 66000,
     reviewRating: 1
   },
   {
     name: 'Mayella',
-    employeeNumber: '89068',
-    annualSalary: '35000',
+    employeeNumber: 89068,
+    annualSalary: 35000,
     reviewRating: 1
   }
 ];
@@ -42,33 +42,35 @@ const employees = [
 
 
 function calculateBonus(addBonus) {
-  if (reviewRating <= 2){
-  return "No Bonus";
+  if (annualSalary >= 65000){
+    addBonus =( totalCompesation* .01);
+  }
+  
+  else if (reviewRating <= 2){
+    addBonus =( totalCompesation* .0);
   }
 
-  if (reviewRating === 3){
-    return "Bonus is 4%";
+  else if (reviewRating === 3){
+    addBonus =( (totalCompesation * .04) + totalCompesation );
+  
   }
 
-    if (reviewRating === 4){
-      return "Bonus is 6%";
+    else if (reviewRating === 4){
+      addBonus =( (totalCompesation * .06) + totalCompesation );
+    
     }
 
-  if (reviewRating === 5){
-    return "Bonus is 10%";
+ else if (reviewRating === 5){
+    addBonus =( (totalCompesation * .1) + totalCompesation );
+  
   }
 
   if ( employeeNumber.lenght === 4);{
-    return 'Additional 5% Bonus';
+    return addBonus;
   }
-
-  if(annualSalary >= '65000'){
-    return ' Bonus is only 1%';
-  }
-
-  }
+}
   
-  
+
 
 
 
